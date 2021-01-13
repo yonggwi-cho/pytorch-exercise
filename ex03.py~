@@ -1,0 +1,28 @@
+import torch
+
+a = torch.tensor([1,2,3])
+b = torch.tensor([4,5,6])
+
+c = torch.tensor([[6,5,4],[3,2,1]])
+
+print(a+3)
+
+print(a+b)
+
+print(c+2)
+print(c+a)                 
+print(c+c)
+
+a = torch.tensor([[1,2,3],[4,5,6]],dtype=torch.float64)
+
+m = torch.mean(a)
+print(m.item())
+
+m = a.mean()
+print(m.item())
+
+print(a.mean(0))
+
+print(torch.sum(a).item())
+print(torch.max(a).item())
+print(torch.min(a).item())
